@@ -1,9 +1,10 @@
 package uebungen.uebung1.test;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Test;
 import uebungen.uebung1.control.GermanTranslator;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class GermanTranslatorTest {
 

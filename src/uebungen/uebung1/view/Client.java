@@ -1,6 +1,7 @@
 package uebungen.uebung1.view;
 
-import uebungen.uebung1.control.Server;
+
+import uebungen.uebung1.control.Host;
 
 public class Client {
 
@@ -14,8 +15,9 @@ public class Client {
         //
         // Strenge Implementierung gegen das Interface Translator gewuenscht!
 
+
         System.out.println("Das Ergebnis der Berechnung: " +
-                Server.translator(aNumber));
+                Host.translator(aNumber));
 
     }
 
