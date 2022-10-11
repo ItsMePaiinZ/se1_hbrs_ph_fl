@@ -18,8 +18,7 @@ class GermanTranslatorTest {
 
     @Test
     void gAEK_1(){
-        for(int i = 1; i <= 10; i++)
-            assertEquals(translations[i-1], gTrans.translateNumber(i));
+        assertEquals(10, "zehn");
     }
 
     @Test
