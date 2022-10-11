@@ -9,8 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class GermanTranslatorTest {
 
     GermanTranslator gTrans = new GermanTranslator();
-    String[] translations = {"eins", "zwei", "drei", "vier", "fuenf", "sechs", "sieben", "acht", "neun", "zehn"};
-
+    
     // gAEK_1: [1,...,10]
     // uAEK_1: [MIN_INT,...,1[
     // uAEK_2: ]10,...,MAX_INT]
