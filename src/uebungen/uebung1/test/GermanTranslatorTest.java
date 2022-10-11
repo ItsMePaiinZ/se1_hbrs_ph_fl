@@ -38,11 +38,4 @@ class GermanTranslatorTest {
         assertEquals("Uebersetzung der Zahl " + uAEK_2_number + " nicht möglich (Version: " + gTrans.version +")", gTrans.translateNumber(uAEK_2_number));
     }
 
-    // Useless
-    @Test
-    void uAEK_3(){
-        String uAEK_3_NaN = "abc";
-        assertThrows(NumberFormatException.class, ()-> gTrans.translateNumber(Integer.parseInt(uAEK_3_NaN)));
-    }
-
 }
