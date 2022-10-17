@@ -1,15 +1,15 @@
 package uebungen.uebung1.test;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Test;
 import uebungen.uebung1.control.GermanTranslator;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class GermanTranslatorTest {
 
     GermanTranslator gTrans = new GermanTranslator();
-    String[] translations = {"eins", "zwei", "drei", "vier", "fuenf", "sechs", "sieben", "acht", "neun", "zehn"};
-
+    
     // gAEK_1: [1,...,10]
     // uAEK_1: [MIN_INT,...,1[
     // uAEK_2: ]10,...,MAX_INT]
@@ -17,8 +17,7 @@ class GermanTranslatorTest {
 
     @Test
     void gAEK_1(){
-        for(int i = 1; i <= 10; i++)
-            assertEquals(translations[i-1], gTrans.translateNumber(i));
+        assertEquals(10, "zehn");
     }
 
     @Test
@@ -35,12 +34,6 @@ class GermanTranslatorTest {
         assertEquals("Uebersetzung der Zahl " + uAEK_2_number + " nicht möglich (Version: " + gTrans.version +")", gTrans.translateNumber(uAEK_2_number));
         uAEK_2_number = 11; // Grenzwert
         assertEquals("Uebersetzung der Zahl " + uAEK_2_number + " nicht möglich (Version: " + gTrans.version +")", gTrans.translateNumber(uAEK_2_number));
-    }
-
-    @Test
-    void uAEK_3(){
-        String uAEK_3_NaN = "abc";
-        assertThrows(NumberFormatException.class, ()-> gTrans.translateNumber(Integer.parseInt(uAEK_3_NaN)));
     }
 
 }
