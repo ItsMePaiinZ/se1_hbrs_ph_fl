@@ -1,6 +1,5 @@
-package uebungen.uebung2;
+package org.hbrs.se1.ws22.uebung2;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

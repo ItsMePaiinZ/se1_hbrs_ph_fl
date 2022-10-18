@@ -1,4 +1,4 @@
-package uebungen.uebung2;
+package org.hbrs.se1.ws22.uebung2;
 
 interface Member {
     // ID ist über einen Konstruktor einer abgeleiteten Klasse
