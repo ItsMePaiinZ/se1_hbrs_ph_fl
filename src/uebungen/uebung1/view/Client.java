@@ -17,7 +17,7 @@ public class Client {
 
 
         System.out.println("Das Ergebnis der Berechnung: " +
-                Host.translator(aNumber));
+                Host.translator().translateNumber(aNumber));
 
     }
 
