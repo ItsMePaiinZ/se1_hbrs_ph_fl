@@ -12,6 +12,8 @@ public class Container {
         members.add(member);
     }
 
+    // Welche Nachteile ergeben sich aus ihrer Sicht für ein solchen Fehlerhandling gegenüber einer Lösung mit Exceptions? Kurzes Statement!
+    // Fehler können später zu Problemen in der Laufzeit führen.
     public String deleteMember(Integer id) {
         if (members.stream().filter(m -> m.getID() == id).count() == 0)
             return "Es gibt keinen Member mit der ID " + id + " in dem Container!";
