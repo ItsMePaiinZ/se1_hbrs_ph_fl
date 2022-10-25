@@ -21,7 +21,6 @@ class ContainerTest {
     }
 
     @Test
-    @Order(2)
     public void testNull() throws ContainerException {
         c = Container.createContainer(null);
         c.addMember(m1);
@@ -31,7 +30,6 @@ class ContainerTest {
     }
 
     @Test
-    @Order(1)
     public void testMongoDB() throws ContainerException {
         c = Container.createContainer(new PersistenceStrategyMongoDB());
         c.addMember(m1);
@@ -41,7 +39,6 @@ class ContainerTest {
     }
 
     @Test
-    @Order(3)
     public void testLoc(){
         PersistenceStrategyStream pss = new PersistenceStrategyStream("");
         c = Container.createContainer(pss);
@@ -50,7 +47,6 @@ class ContainerTest {
     }
 
     @Test
-    @Order(4)
     public void testSize() throws ContainerException, PersistenceException, IOException {
         c.addMember(m2);
         assertEquals(1, c.size());
