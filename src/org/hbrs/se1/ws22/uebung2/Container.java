@@ -52,6 +52,10 @@ public class Container {
         ps.save(container.members);
     }
 
+    public void store(List<Member> members) throws PersistenceException, IOException {
+        ps.save(members);
+    }
+
     public void load() throws PersistenceException {
         container.members = (ArrayList<Member>) ps.load();
     }

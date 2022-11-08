@@ -3,6 +3,8 @@ package org.hbrs.se1.ws22.uebung3;
 import org.hbrs.se1.ws22.uebung2.Member;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.stream.Collectors;
 
 public class MemberView {
 

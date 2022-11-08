@@ -4,6 +4,8 @@ import org.hbrs.se1.ws22.uebung2.ConcreteMember;
 import org.hbrs.se1.ws22.uebung2.Container;
 import org.hbrs.se1.ws22.uebung2.ContainerException;
 
+import java.util.HashMap;
+
 public class Client {
 
     public static void addMember(Container c, int anzahl) throws ContainerException {

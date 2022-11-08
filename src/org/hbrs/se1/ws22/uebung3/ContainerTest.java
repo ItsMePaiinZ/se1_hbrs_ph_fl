@@ -6,14 +6,15 @@ import org.hbrs.se1.ws22.uebung2.ContainerException;
 import org.junit.jupiter.api.*;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class ContainerTest {
+
     Container c;
     ConcreteMember m1 = new ConcreteMember();
     ConcreteMember m2 = new ConcreteMember();
-
 
     @BeforeEach
     public void setup(){

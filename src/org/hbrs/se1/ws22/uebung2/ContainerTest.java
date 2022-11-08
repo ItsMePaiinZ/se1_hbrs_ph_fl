@@ -3,6 +3,8 @@ package org.hbrs.se1.ws22.uebung2;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ContainerTest {
